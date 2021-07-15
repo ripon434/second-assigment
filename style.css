@@ -1,0 +1,232 @@
+                         
+                          /* Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+         /*--------------------
+                  Common styles
+         ------------------------  */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+
+.container{
+    width: 100%;
+    margin-left: 5%;
+    margin-bottom: 150px;
+
+}
+p{
+    color: #6C6C6C;
+
+}
+.star-color{
+    color:orchid;
+}
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            Header Menu 
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+header{
+    width: 100%;
+    /* height: 630px; */
+    background-color: #2d25a0;
+}
+.menu,
+.login-button{
+    margin-top: 42px;
+   
+
+}
+nav .nav-wrapper{
+    display: flex;
+    align-items: center;
+    margin-left: 95px;
+}
+nav .nav-wrapper .menu > ul{
+       display: flex;
+       align-items: center;
+}
+nav .nav-wrapper .menu > ul li{
+list-style: none;
+padding: 10px 24px
+}
+.menu > ul li:hover{
+background-color: #231c83;
+border-radius: 10px;
+}
+.menu > ul li a{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.login-button {
+    margin-left: 270px;
+}
+.login-button a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+}
+.fa-sign-in-alt{
+    margin-right: 10px;
+}
+
+                    /* ----------------------------
+                      Header content 
+                    -----------------------------*/
+.header-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    margin-top: 40px;
+    
+    padding-bottom: 86px;
+    
+}
+/* .headding-and-button {
+    width: max-content;
+} */
+.headding-and-button h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+
+} 
+.headder-banner {
+    margin-right: 140px;
+}
+.headder-banner img{
+    width: 100%;
+}
+.headder-banner:hover img{
+    transform: rotate(20deg);
+    transition: transform 2s ease-in-out;
+}
+  
+.watch-live-button a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+}
+.watch-live-button:hover a{
+    transform: scale(2);
+    transition: transform 1s;
+    background-color:aqua;
+    border-radius: 40px;
+  }
+
+.fa-arrow-right{
+    margin-left: 10px;
+}
+                    
+                        /* <!-------------------------\
+                             player name and details 
+                        \---------------------------> */
+ .players{
+         display: grid;
+         justify-content: center;
+         justify-items: center;
+         grid-template-columns: repeat(3, 1fr);
+         grid-gap: 27px;
+         margin-top: 49px;
+         margin-left: 177px;
+         margin-right: 219px;
+         margin: bottom 70px;
+        }
+.players img{
+    width: 100%;
+}
+.player{
+    background-color:white;
+    margin: 5px;
+    padding: 10px;
+    border: 5px solid gold;
+    border-radius: 40px 20px;
+    box-shadow: 5px 10px grey;
+    
+
+}
+.middel{
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-column-gap: 0px; */
+    display: flex;
+    margin-top: 49px;
+    margin-left: 182px;
+    margin-right: 165px;
+    border: 165px;
+}
+.last{
+    width: 466px;
+    height: 309px;
+    margin-top: 244px;
+    margin-left: 182px;
+    margin-right: 69px;
+    
+    
+}
+.match{
+    width: 567px;
+    height: 427px;
+    padding-left: 69px;
+    margin-top: 169px;
+    margin-right: 169px;
+    
+}
+.match:hover{ transform: scale(2);
+    transition: transform 1s;
+    border-radius: 10px;
+
+}
+.match img{
+    width: 100%;
+}
+
+              /* Footer part */
+footer{
+    text-align: center;
+}
+.icon-part{
+    justify-content: space-evenly;
+}
+p:hover {
+    background-color: orange;
+  }
+                /* media quary */
+                 /*----------------
+                   for mobile 
+                  -------------*/
+  @media  only screen and (max-width:688px){
+      .container{
+          width: 100%;
+      }
+      .header-content, .players{
+    
+        grid-template-columns: repeat(1, 1fr);
+      }
+      
+  }
+                  /* ---------------
+                       ipad devices 
+                  ------------------*/
+                
+  @media only screen and (min-width:689px) and (max-width:992px) {
+      .container{
+          width: 100%;
+          
+      }
+      .players{
+          width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+       
+      }
+      
+      
+  }
